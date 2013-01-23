@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Clock In Words</title>
+
+    <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="clockInWords.js"></script>
+
+</head>
+<body>
+<input id="inputTime" type="text" value="00:00"/>
+<input id="submitButton" type="button" value="Get Time In Words"/>
+<br/>
+<span id="timeInWords"></span>
+<script type="text/javascript">
+    $('#submitButton').click(function() {
+    var dtTm = $('#inputTime').val();
+    $('#timeInWords').clockInWords(dtTm);
+    });
+
+</script>
+</body>
+</html>
